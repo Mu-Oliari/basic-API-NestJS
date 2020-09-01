@@ -1,20 +1,22 @@
 # basic API / NestJS
-
+---
 ![Badge](https://img.shields.io/static/v1?label=Node&message=v12.16.2&color=green&style=flat&logo=NODE.JS&logoColor=white) ![Badge](https://img.shields.io/static/v1?label=TipeScript&message=v4.0.2&color=blue&style=flat&logo=TYPESCRIPT) ![Badge](https://img.shields.io/static/v1?label=NestJS&message=v7.5.1&color=red&style=flat&logo=NESTJS) ![Badge](https://img.shields.io/static/v1?label=MySQL&message=v8.0&color=orange&style=flat&logo=MYSQL&logoColor=white) 
 
 
 Basic backend API using NestJS, TypeScript &amp; Mysql
 
-## About!
+## about
+---
  This application is a first try with NestJS to run a basic backend API restfull.
 
-### #requirement
-
+### requirement
+---
 * [Node.js](https://nodejs.org/en/download/) installed.
 * [NestJS](https://nestjs.com/) installed.
 * [MySQL](https://www.mysql.com/downloads/) installed.
 
-### #installation
+### installation
+---
  Download the application zip, or clone this repo:
 ```sh
 $ git clone https://github.com/Mu-Oliari/basic-API-NestJS.git
@@ -25,6 +27,7 @@ $ cd basic-API-NestJS
 $ npm install
 ```
 dependencies below will be installed:
+
 **dependencies:**
  >   "@nestjs/common"
     "@nestjs/config"
@@ -63,7 +66,8 @@ dependencies below will be installed:
     "tsconfig-paths"
     "typescript"
 
-### #starting / configuring database
+### starting / configuring database
+---
 First create a `.env` file on root of the project, may have to contain de below information:
 
 ~~~
@@ -81,11 +85,25 @@ TYPEORM_MIGRATIONS_DIR=src/migrations
 ~~~
 Create Database on MySQL and replace [YourDatabaseHere] to your database. 
 
-### #run
+### run
+---
+To create table:
+```sh
+$ npm run typeorm migration:run
+```
 
-working on this . . .
+To runserver:
+```sh
+$ npm run start
+```
+server will rise on http://localhost:3000/
 
-#### #license
-MIT
+* on server running, go to **`/api`** for API documentation.
 
-----
+now you can GET/POST/PUT/DELETE a user using a basic API
+
+#### license
+---
+[MIT](https://mit-license.org)
+
+---
